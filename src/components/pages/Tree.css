@@ -1,0 +1,13 @@
+.like{
+    color:red;
+}
+.dislike{
+    color:rgba(0, 0, 0, 0.54);
+}
+.middleBox{
+    padding-left: 35vw;
+    padding-right: 35vw;
+}
+.boxSize{
+    width: 50vw;
+}

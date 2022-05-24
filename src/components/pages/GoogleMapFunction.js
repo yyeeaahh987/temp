@@ -1,6 +1,6 @@
 const GOOGLE_MAP_API_WWW = 'https://www.googleapis.com'
 const GOOGLE_MAP_API_MAPS = 'https://maps.googleapis.com'
-const GOOGLE_API_KEY = 'AIzaSyBNFq7ZbPdbjAhWkG5goQAs5sbj8YdQ6ng'
+const GOOGLE_API_KEY = ''
 const SERVER_URL = 'http://localhost:3001'
 
 export async function getCurrentLatLng() {

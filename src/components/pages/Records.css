@@ -1,0 +1,88 @@
+.Records-container {
+    margin: 10px auto;
+    width: 2200px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Records-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .Records-container-btn {
+    margin: 50px auto;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background: linear-gradient(
+      90deg,
+      rgb(39, 176, 255) 0%,
+      rgb(0, 232, 236) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .Records-container-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      90deg,
+      rgb(39, 143, 255) 0%,
+      rgb(12, 99, 250) 100%
+    );
+    transition: all 0.4s ease-out;
+  }
+
+  .Records-content {
+    width: 2200px;
+    height: 1000px;
+    margin-left: 20px;
+    /* background: linear-gradient(
+      90deg,
+      rgb(132, 225, 132) 0%,
+      rgb(214, 245, 214) 100%
+    ); */
+}
+
+  .Records {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.Delete {
+  
+}
+
+table, td, th
+{
+    border:1px solid green;
+}
+th
+{
+    background-color:green;
+    color:white;
+    padding:5px;
+}
+td
+{
+    padding:10px;
+}

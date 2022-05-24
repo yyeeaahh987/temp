@@ -48,6 +48,9 @@ export default function Post() {
         photo: "",
         iconName: "P",
         like: true,
+        comment:"have a nice day",
+        image:"/assets/images/Acacia_confusa_ Merr_1.jpg",
+        altImage:"Photo 1.jpg",
       },
       {
         title: "Alex",
@@ -55,6 +58,9 @@ export default function Post() {
         photo: "",
         icon: "A",
         like: true,
+        comment:"good morning",
+        image:"/assets/images/Acacia_confusa_ Merr_1.jpg",
+        altImage:"Photo 2.jpg",
       },
       {
         title: "Tom",
@@ -62,6 +68,9 @@ export default function Post() {
         photo: "",
         icon: "T",
         like: true,
+        comment:"beautiful",
+        image:"",
+        altImage:"Photo 3.jpg",
       },
       {
         title: "Alan",
@@ -69,6 +78,9 @@ export default function Post() {
         photo: "",
         icon: "A",
         like: false,
+        comment:"hallo",
+        image:"",
+        altImage:"Photo 4.jpg",
       }
     ])
   }, [])
@@ -105,8 +117,9 @@ export default function Post() {
                       <CardMedia
                         component="img"
                         height="194"
-                        image="/static/images/cards/paella.jpg"
-                        alt="Paella dish"
+                        // image="/static/images/cards/paella.jpg"
+                        image={treegramContent?.image??""}
+                        alt={treegramContent?.altImage??""}
                       />
                       <CardContent>
                         <Typography variant="body2" color="text.secondary">
@@ -137,7 +150,7 @@ export default function Post() {
                       </CardActions>
                       <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
-                          {/* <Typography paragraph>Method:</Typography> */}
+                          <Typography paragraph>{treegramContent.comment}</Typography>
                         </CardContent>
                       </Collapse>
                     </Card>
